@@ -67,7 +67,7 @@ HOST = os.environ.get("COMFY_HOST", "http://127.0.0.1:8188")
 COMFY = Path(os.environ.get("COMFY_DIR", r"C:\AI\H3\ComfyUI-0.36.0"))
 FPS = 24
 SECTIONS = ["subject_definitions", "summary", "retention_analysis", "detailed_description", "overall_soundscape", "non_diegetic_music"]
-MODELS = dict(unet=os.environ.get("H3_UNET", "minimax_h3_ref2va_pruned_int8_convrot.safetensors"),  # H3_UNET: A/B other weights (e.g. unpruned minimax_h3_ref2va_int8_convrot.safetensors)
+MODELS = dict(unet=os.environ.get("H3_UNET", "Cobijada_H3_Hybrid精炼int8.safetensors"),  # Default: Cobijada H3 Hybrid INT8
               clip=os.environ.get("H3_CLIP", "qwen3vl_32b_h3_ultra_uncensored_heretic_int8_convrot.safetensors"),  # 16GB profile: qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors
               video_vae=os.environ.get("H3_VIDEO_VAE", "minimax_h3_video_vae_fp16.safetensors"), audio_vae="minimax_h3_audio_vae_fp32.safetensors")
 
